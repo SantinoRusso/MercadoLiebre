@@ -67,11 +67,25 @@ display:flex ;
 .main-navbar li {
     margin: 0 8px;
 }
-    
-@media (min-width: 1200px){
 .logo{
     width: 250px;
+    color: #eac926;
 }
+
+img {
+    border-style: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+@media (min-width: 1200px){
+
     .main-header-top-bar, .main-navbar{
         max-width: 1200px;
         margin:auto;
@@ -142,10 +156,7 @@ margin-bottom: 10px;
     justify-content: center;
     padding: 10px 15px;
 }
-.producto{
-border: solid 1px #ebebeb;
-justify-content: space-around;
-}
+
 
 .product-desc i {
     position: relative;
@@ -167,6 +178,7 @@ justify-content: space-around;
         font-size: 24px;
         line-height: 30px;
      }
+   
      .priceOFF {
         display: flex;
         align-items: center;
@@ -186,9 +198,6 @@ justify-content: space-around;
 img {
     border-style: none;
 }
-
-element.style {
-}
 }
 @media (min-width: 768px){
 #banner {
@@ -205,8 +214,87 @@ img {
 * {
     box-sizing: border-box;
 }
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAEAEA;
+    position: relative;
+    padding-bottom: 52rem;
+    min-height: 100vh;
+}
+@media (min-width: 768px){
+.product {
+    width: 382px;
+    margin: 0px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    margin: auto;
+}
+* {
+    box-sizing: border-box;
 }
 }
+footer{
+    background-color:#ffffff ;
+    display: flex;
+
+}
+.footer-div{
+    display: flex;
+}
+.promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    width: 75%;
+    text-align: center;
+    margin-top: 40px;
+}
+.fa-user-shield:before {
+    content: "\f505";
+}
+.promo h2 {
+    margin: 0;
+    margin-bottom: 1px;
+}
+
+h2 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.promo i {
+    font-size: x-large;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+}
+.fa-classic, .fa-regular, .fa-solid, .far, .fas {
+    font-family: "Font Awesome 6 Free";
+}
+
+.descripcion{
+    border: 1px solid #ebebeb;
+}
+.tres-barras{
+ content: "/f0c9";
+}
+
+.productos{
+    border: solid 1px #ebebeb;
+    justify-content: space-around;
+    }
