@@ -1,48 +1,108 @@
-<form action="/login" method="POST">
-    <input type="text" name="NombreYApellido">
-    <br>
-    <input type="text" name="NombreDeUsuario">
-    <br>
-    <input type="date" name="FechaDeNacimiento">
-    <br>
-    <input type="text" name="Domicilio">
-    <br>
-    <input type="radio" name="PerfilDelUsuario" value="comprar">
-    <br>
-    <input type="radio" name="PerfilDelUsuario" value="vender">
-    <br>
-    <input type="checkbox" name="categoriaDeInteres" value="Electro">
-    <br>
-    <input type="checkbox" name="categoriaDeInteres" value="Electro">
-    <br>
-    <input type="checkbox" name="categoriaDeInteres" value="Moda">
-    <br>
-    <input type="checkbox" name="categoriaDeInteres" value="Hogar">
-    <br>
-    <input type="checkbox" name="categoriaDeInteres" value="Jugeteria">
-    <br>
-    <input type="checkbox" name="categoriaDeInteres" value="VidaSana">
-    <br>
-    <input type="film" name="FotoDeUsuario" accept=".jpg">
-    <br>
-    <input type="password" name="contrasena">
-    <br>
-    <input type="password" name="confirmarContrasena">
 
-    <button></button>
-</form>
-
-<form action="/crear producto" method="=POST">
-<div>
-<label>Nombre del producto:</label>
-<input type="text" name="nombre">
-</div>
-<div>
-    <label>Precio:</label>
-    <input type="text" name="precio">
-</div>
-<div>
-    <label for="">Esta en oferta:</label>
-    <input type="radio" name="enOferta">
-</div>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/login" method="POST">
+    <div>
+        <label>Nombre y Apellido:</label>
+        <input type="text" name="NombreUsuario">
+    </div>
+        <br>
+    <div>
+        <label>
+        <input type="date" name="FechaDeNacimiento">
+        Fecha de nacimiento:
+        </label>
+    </div>
+        <br>
+    <div>
+        <label>Domicilio:</label>
+        <input type="text" name="Domicilio">
+    </div>
+        <br>
+    <div>
+        <label>
+        <input type="radio" name="PerfilDelUsuario" value="comprar">
+            Comprar
+        </label>
+        <label>
+        <input type="radio" name="PerfilDelUsuario" value="vender">
+            Vender
+        </label>
+    </div>
+        <br>
+    <div>
+        <label>
+        <input type="checkbox" name="categoriaDeInteres" value="Electro">
+        Electrodomesticos
+        </label>
+        <label>
+        <input type="checkbox" name="categoriaDeInteres" value="Moda">
+        Moda
+        </label>
+        <label>
+        <input type="checkbox" name="categoriaDeInteres" value="Hogar">
+        Hogar
+        </label>
+        <label>
+        <input type="checkbox" name="categoriaDeInteres" value="Jugeteria">
+        Jugeteria
+        </label>
+        <label>
+        <input type="checkbox" name="categoriaDeInteres" value="VidaSana">
+        VidaSana
+        </label>
+    </div>
+        <br>
+    <div>
+        <label>
+        <input type="film" name="FotoDeUsuario" accept=".jpg, .png">
+            Seleccionar una foto de perfil
+        </label>
+    </div>
+        <br>
+    <div>
+        <label>
+        <input type="password" name="contraseña">
+        Contraseña:
+    </label>
+    </div>
+        <br>
+    <div>
+        <label>
+        <input type="password" name="confirmarContraseña">
+        Confirmar contraseña:
+    </label>
+    </div>
+    
+        <button type="submit">
+            Enviar
+        </button>
+        <button type="reset">
+            Borrar
+        </button>
+    </form>
+    
+    <form action="/crear producto" method="=POST">
+    <div>
+    <label>Nombre del producto:</label>
+    <input type="text" name="nombre">
+    </div>
+    
+    <div>
+        <label>Precio:</label>
+        <input type="text" name="precio">
+    </div>
+    <div>
+        <label>Esta en oferta:</label>
+        <input type="radio" name="enOferta">
+    </div>
+    </form> 
+</body>
+</html>
